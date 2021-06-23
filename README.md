@@ -1,0 +1,1 @@
+In addition to the project requirements, I added theming with background images for the activities, textures within the maze panel, and ﻿a custom icon drawn in the map. For PlayManuallyActivity, I implemented swipe gestures.﻿﻿

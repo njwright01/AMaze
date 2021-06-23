@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">AMazeByNicholasWright</string>
+    <string name="load_maze_button">Revisit</string>
+    <string name="generate_maze_button">Explore</string>
+    <string name="title_main">Escape from the Cheese Maze!</string>
+    <string name="select_skill_level">Skill Level:</string>
+    <string name="select_driver">Driver Algorithm:</string>
+    <string name="select_generation">Generation Algorithm:</string>
+    <string-array name="driver_options">
+        <item>Manual</item>
+        <item>Wizard</item>
+        <item>Wall Follower</item>
+    </string-array>
+    <string-array name="generation_options">
+        <item>DFS</item>
+        <item>Prim</item>
+        <item>Eller</item>
+    </string-array>
+    <string name="title_generating">Generating the maze...</string>
+    <string name="gen_to_play_button">Next</string>
+    <string name="show_visible_walls_button">Show Map</string>
+    <string name="show_solution_button">Solution</string>
+    <string name="go_to_win_button">Win</string>
+    <string name="go_to_lose_button">Lose</string>
+    <string name="up_button">F</string>
+    <string name="down_button">B</string>
+    <string name="left_button">L</string>
+    <string name="right_button">R</string>
+    <string name="zoom_in_button">+</string>
+    <string name="zoom_out_button">-</string>
+    <string name="title_manual">Manual</string>
+    <string name="energy_remaining">Energy Remaining:</string>
+    <string name="zoom_text">Zoom</string>
+    <string name="animation_toggle_ON">Stop Animation</string>
+    <string name="animation_toggle_OFF">Start Animation</string>
+    <string name="title_win">Congratulations!</string>
+    <string name="subtitle_win">You have successfully navigated the maze</string>
+    <string name="energy_consumed">Energy Consumed:</string>
+    <string name="path_length">Path Length:</string>
+    <string name="try_again_button">Try Again</string>
+    <string name="title_lose">You Lost!</string>
+    <string name="subtitle_lose">You failed to find the exit!</string>
+    <string name="min_path_length">Minimum Path Length:</string>
+    <string name="show_full_maze_button">Show Full</string>
+    <string name="sensors_text">Sensors</string>
+
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cheese_background"
+    tools:context=".gui.PlayAnimationActivity">
+
+
+    <edu.wm.cs.cs301.nicholaswright.gui.MazePanel
+        android:id="@+id/maze_panel_animation"
+        android:layout_width="1200px"
+        android:layout_height="1200px"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_animation" />
+
+
+    <TextView
+        android:id="@+id/title_animation"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_manual"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_column="3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textAlignment="center"
+        android:textOff="@string/animation_toggle_OFF"
+        android:textOn="@string/animation_toggle_ON"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maze_panel_animation" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton_animation"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/up_button" />
+
+            <Button
+                android:id="@+id/button_show_walls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="@string/show_visible_walls_button" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="@string/left_button" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/sensors_text"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/right_button" />
+
+            <Button
+                android:id="@+id/button_show_full"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:text="@string/show_full_maze_button" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="@string/zoom_out_button" />
+
+            <Button
+                android:id="@+id/button_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/down_button" />
+
+            <Button
+                android:id="@+id/button_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="@string/zoom_in_button" />
+
+            <Button
+                android:id="@+id/button_show_solution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="@string/show_solution_button" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
